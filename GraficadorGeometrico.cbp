@@ -32,6 +32,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Circulo.cpp" />
+		<Unit filename="Circulo.h" />
+		<Unit filename="Cuadrado.cpp" />
+		<Unit filename="Cuadrado.h" />
+		<Unit filename="Figura.h" />
+		<Unit filename="Rectangulo.cpp" />
+		<Unit filename="Rectangulo.h" />
+		<Unit filename="Triangulo.cpp" />
+		<Unit filename="Triangulo.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

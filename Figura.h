@@ -3,8 +3,8 @@
 
 class Figura {
 public:
-    virtual void dibujar() = 0; // Función puramente virtual.
-    virtual ~Figura() {} // Destructor virtual necesario para una clase base con métodos virtuales.
+    virtual void dibujar(int x, int y) = 0;
+    virtual ~Figura() {}
 };
 
-#endif
+#endif // FIGURA_H

@@ -4,10 +4,11 @@
 #include "Figura.h"
 
 class Triangulo : public Figura {
+private:
     int baseSize;
 public:
     Triangulo(int baseSize) : baseSize(baseSize) {}
-    void dibujar() override; // Implementación específica para dibujar un triángulo.
+    void dibujar(int x, int y) override;
 };
 
-#endif
+#endif // TRIANGULO_H

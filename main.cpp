@@ -1,37 +1,38 @@
 #include <iostream>
-#include <limits> // Añade esto para usar std::numeric_limits
-#include <conio.h> // para _kbhit() y _getch() en Windows
+#include <conio.h>
+#include <limits>
 #include "Figura.h"
 #include "Triangulo.h"
-// ... incluir otros archivos de cabecera ...
+#include "Cuadrado.h"
+#include "Rectangulo.h"
+#include "Circulo.h"
+
 
 void mostrarMenu() {
-    // Lógica para mostrar el menú
     std::cout << "\nSelecciona una figura para dibujar:" << std::endl;
     std::cout << "1. Triangulo" << std::endl;
-    // ... agregar más figuras aquí ...
+    std::cout << "2. Cuadrado" << std::endl;
+    std::cout << "3. Rectangulo" << std::endl;
+    std::cout << "4. Circulo" << std::endl;
 }
 
-// Esta función asegura que el usuario ingrese un número válido para las dimensiones
 int pedirDimension(const char* nombre) {
     int valor;
-    std::cout << "Ingresa el tamaño de " << nombre << " del triángulo: ";
+    std::cout << "Ingresa el tamaño de " << nombre << " de la figura: ";
     while (!(std::cin >> valor) || valor <= 0) {
         std::cout << "Por favor, ingresa un valor positivo: ";
-        std::cin.clear(); // limpiar el estado de fallo de cin
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // ignorar la entrada hasta la siguiente línea
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     }
     return valor;
 }
 
 void limpiarPantalla() {
-    // Esto es específico de Windows. En otros sistemas, podrías necesitar usar 'clear' en lugar de 'cls'
     system("cls");
 }
 
 int main() {
     bool isRunning = true;
-    // Asumiendo que las coordenadas iniciales del cursor son (0,0)
     int cursorX = 0, cursorY = 0;
 
     std::cout << "Presiona 'F' para empezar..." << std::endl;
@@ -40,29 +41,38 @@ int main() {
         if (_kbhit()) {
             char key = _getch();
             switch (key) {
-                case 'w': // Mover cursor hacia arriba
-                    cursorY--;
-                    break;
-                case 's': // Mover cursor hacia abajo
-                    cursorY++;
-                    break;
-                case 'a': // Mover cursor a la izquierda
-                    cursorX--;
-                    break;
-                case 'd': // Mover cursor a la derecha
-                    cursorX++;
-                    break;
+                // ... (tus casos de teclas para mover el cursor)
                 case 'f': // Usamos 'f' como sustituto para F12 por simplicidad
-                    mostrarMenu();
-                    int opcion;
-                    std::cin >> opcion; // Espera la entrada del usuario
-                    if (opcion == 1) {
-                        int base = pedirDimension("la base"); // Pedir al usuario la base del triángulo
-                        // Suponiendo que la función dibujar() toma la base como parámetro
-                        Triangulo triangulo(base);
-                        triangulo.dibujar();
+                    while (true) {
+                        limpiarPantalla(); // Limpia la pantalla para mostrar el menú
+                        mostrarMenu();
+                        int opcion;
+                        std::cin >> opcion; // Espera la entrada del usuario
+                        if (opcion == 1) {
+                            int base = pedirDimension("la base");
+                            Triangulo triangulo(base);
+                            triangulo.dibujar(cursorX, cursorY);
+                        } else if (opcion == 2) {
+                            int lado = pedirDimension("el lado");
+                            Cuadrado cuadrado(lado);
+                            cuadrado.dibujar(cursorX, cursorY);
+                        } else if (opcion == 3) {
+                            int ancho = pedirDimension("el ancho");
+                            int alto = pedirDimension("la altura");
+                            Rectangulo rectangulo(ancho, alto);
+                            rectangulo.dibujar(cursorX, cursorY);
+                        } else if (opcion == 4) {
+                            int radio = pedirDimension("el radio");
+                            Circulo circulo(radio);
+                            circulo.dibujar(cursorX, cursorY);
+                        } else if (opcion == 0) {
+                            // Supongamos que la opción 0 es para salir del menú
+                            break;
+                        }
+                        // Podrías agregar un pequeño "sleep" aquí para que el dibujo se muestre antes de limpiar la pantalla.
+                        std::cout << "Presiona cualquier tecla para volver al menú..." << std::endl;
+                        _getch(); // Espera a que el usuario presione una tecla antes de volver al menú
                     }
-                    // ... manejo de otras figuras ...
                     break;
                 case 27: // ESC para salir
                     isRunning = false;
@@ -71,8 +81,6 @@ int main() {
                     break;
             }
         }
-        // Aquí puedes agregar la lógica para limpiar y actualizar la pantalla.
     }
     return 0;
 }
-

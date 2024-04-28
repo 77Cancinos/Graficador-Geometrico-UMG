@@ -1,14 +1,17 @@
 # depslib dependency file v1.0
-1714283400 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\main.cpp
+1714329910 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\main.cpp
 	<iostream>
-	<limits>
 	<conio.h>
+	<limits>
 	"Figura.h"
 	"Triangulo.h"
+	"Cuadrado.h"
+	"Rectangulo.h"
+	"Circulo.h"
 
-1714281881 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\figura.h
+1714326285 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\figura.h
 
-1714281887 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.h
+1714326308 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.h
 	"Figura.h"
 
 1714278112 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.cpp
@@ -16,17 +19,33 @@
 	<iostream>
 	<cmath>
 
-1714279763 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\circulo.cpp
+1714329843 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\circulo.cpp
+	"Circulo.h"
+	<iostream>
+	<cmath>
 
-1714279675 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\cuadrado.cpp
+1714329181 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\cuadrado.cpp
+	"Cuadrado.h"
+	<iostream>
 
-1714279724 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\rectangulo.cpp
+1714329501 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\rectangulo.cpp
+	"Rectangulo.h"
+	<iostream>
 
 1714277284 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.h
 	"Figura.h"
 
-1714281893 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.cpp
+1714326338 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.cpp
 	"Triangulo.h"
 	<iostream>
 	<cmath>
+
+1714329169 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\cuadrado.h
+	"Figura.h"
+
+1714329491 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\rectangulo.h
+	"Figura.h"
+
+1714329832 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\circulo.h
+	"Figura.h"
 
