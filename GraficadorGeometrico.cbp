@@ -37,6 +37,8 @@
 		<Unit filename="Cuadrado.cpp" />
 		<Unit filename="Cuadrado.h" />
 		<Unit filename="Figura.h" />
+		<Unit filename="Linea.cpp" />
+		<Unit filename="Linea.h" />
 		<Unit filename="Rectangulo.cpp" />
 		<Unit filename="Rectangulo.h" />
 		<Unit filename="Triangulo.cpp" />

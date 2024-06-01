@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1714329910 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\main.cpp
+1717265592 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\main.cpp
 	<iostream>
 	<conio.h>
 	<limits>
@@ -8,44 +8,78 @@
 	"Cuadrado.h"
 	"Rectangulo.h"
 	"Circulo.h"
+	"Linea.h"
+	"Rombo.h"
+	"Hexagono.h"
+	<windows.h>
+	<iostream>
+	<fstream>
+	<string>
 
-1714326285 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\figura.h
+1717211841 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\figura.h
 
-1714326308 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.h
+1717258392 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.h
 	"Figura.h"
+	<string>
 
 1714278112 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.cpp
 	"Triangulo.h"
 	<iostream>
 	<cmath>
 
-1714329843 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\circulo.cpp
+1717257925 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\circulo.cpp
 	"Circulo.h"
 	<iostream>
 	<cmath>
 
-1714329181 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\cuadrado.cpp
+1717258696 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\cuadrado.cpp
 	"Cuadrado.h"
 	<iostream>
 
-1714329501 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\rectangulo.cpp
+1717258943 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\rectangulo.cpp
 	"Rectangulo.h"
 	<iostream>
 
 1714277284 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.h
 	"Figura.h"
 
-1714326338 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.cpp
+1717258400 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\triangulo.cpp
 	"Triangulo.h"
 	<iostream>
 	<cmath>
 
-1714329169 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\cuadrado.h
+1717258688 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\cuadrado.h
+	"Figura.h"
+	<string>
+
+1717258934 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\rectangulo.h
+	"Figura.h"
+	<string>
+
+1717208200 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\circulo.h
 	"Figura.h"
 
-1714329491 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\rectangulo.h
-	"Figura.h"
+1717259126 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\linea.cpp
+	"Linea.h"
+	<iostream>
 
-1714329832 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\circulo.h
+1717259115 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\linea.h
 	"Figura.h"
+	<string>
+
+1717259330 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\rombo.cpp
+	"Rombo.h"
+	<iostream>
+
+1717259324 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\rombo.h
+	"Figura.h"
+	<string>
+
+1717259529 source:c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\hexagono.cpp
+	"Hexagono.h"
+	<iostream>
+
+1717259520 c:\users\victor cancinos\desktop\umg\3 semestre\programacion 1\fase 1 proyecto\graficadorgeometrico\hexagono.h
+	"Figura.h"
+	<string>
 
