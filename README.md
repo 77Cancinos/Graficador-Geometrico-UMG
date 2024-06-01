@@ -41,11 +41,7 @@ Para contribuir a este proyecto, por favor envíe un pull request o abra un issu
 
 ### Autores
 
-- [Tu Nombre] - Desarrollo inicial y mantenimiento
-
-### Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT - vea el archivo `LICENSE.md` para detalles.
+- Victor Cancinos - Desarrollo inicial y mantenimiento
 
 ### Agradecimientos
 
